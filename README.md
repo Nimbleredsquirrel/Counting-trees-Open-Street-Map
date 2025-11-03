@@ -1,9 +1,8 @@
-## Интеграции и БД
+## Integrations and Database
 
-Здесь представлено решение задачи получения количества деревьев в определенном городе в определенном году с помощью Open Street Map.
+This repository presents a solution for retrieving the number of trees in a specific city for a given year using Open Street Map.
 
-* Реализовано с помощью FastAPI приложение с эндпоинтом (POST), позволяющим получить количество деревьев в определенном городе в определенном году с помощью Open Street Map.
-  API.
-* Для обращения к Open Street Map API используется библиотека requests.
-* Каждый успешный запрос логируется в базу данных (postgresql).
-* Реализована хранимая процедуру в базе данных, вычисляющая город, который встретился наибольшее количество раз в истории обращений к эндпоинту.
+*   A FastAPI application is implemented with a POST endpoint to get the count of trees in a specific city for a given year via the Open Street Map API.
+*   The `requests` library is used to query the Open Street Map API.
+*   Every successful request is logged to a PostgreSQL database.
+*   A stored procedure has been implemented in the database to determine the city that has been queried most frequently in the endpoint's request history.
